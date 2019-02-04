@@ -1,0 +1,88 @@
+<?php
+                  require("config/lib.php");
+                  $Lib = new Library();
+                  $show = $Lib->showArt();
+                    while($data = $show->fetch(PDO::FETCH_OBJ))
+                    {
+                        echo"
+                        
+                        
+              
+                            ";
+                    }
+                        ?>
+                        
+                        
+                        
+                        
+                        <div class='row'>
+            <div class='col-12 grid-margin'>
+              <div class='card'>
+                <div class='card-body'>
+                  <h5 class='card-title mb-4'>Our Article</h5>
+                  <div class='fluid-container'>                                         
+                    <div class='row ticket-card mt-3'>
+                      <div class='col-md-1'>
+                        <img class='img-sm rounded-circle mb-8 mb-md-0' src=''>
+                      </div>
+                      <div class='ticket-details col-md-9'>
+                        <div class='d-flex'>
+                          <h2>blabla</h2>
+                        </div>
+                        <p class='text-gray ellipsis mb-'>blabla</p>
+                        <div class='row text-gray d-md-flex d-none'>
+                        <div class='col-4 d-flex'>
+                        <div class='col-4 d-flex'>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class='ticket-actions col-md-2'>
+                        <div class='btn-group dropdown'>
+                    <button type='button' class='btn btn-success dropdown-toggle btn-sm' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                      Manage
+                          </button>
+                          <div class='dropdown-menu'>
+                            <a class='dropdown-item' href='#'>View Article</a><br>
+                            <a class='dropdown-item' href='#'>Update Article</a><br>
+                            <a class='dropdown-item' href='#'>Delete Article</a><br>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          Tabel
+          
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"><h2>Article</h2></h4>
+                    <a href="dashboard.php?page=addArticle"><button type="button" class="btn btn-success btn-rounded btn-fw">Add New    +</button></a>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th><center>ID</center></th>
+                            <th>Article</th>
+                            <th >Description</th>
+                          <th>Picture</th>
+                          <th width="120"><center>Action</center></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            
+          </div>
